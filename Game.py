@@ -322,13 +322,8 @@ def game():
             print()
             current_room = "up"
             upstairslanding()
-        elif answer == "V" and current_room == "dining":
+        elif (answer == "V" and current_room == "dining") or (answer == "W" and current_room == "bed"):
             print("You turn back to the hallway.")
-            print()
-            current_room = "hall"
-            hallway()
-        elif answer == "W" and current_room == "bed":
-            print("You turn around and leave the room.")
             print()
             current_room = "hall"
             hallway()
