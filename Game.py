@@ -222,8 +222,8 @@ def game():
             print("The hallway has so many randomly dropped items in it: discarded accessories, empty cans and bottles, a tuba, several pairs of shoes.  Perhaps your keys are among them?  You carefully scan the ground, nudging the various piles with your shoe.  No dice.  You don't see your keys.")
             print()
             hallway()
-        elif answer == "D" and current_room == "living":
-            print("You go into the dining room.")
+        elif (answer == "D" and current_room == "living") or (answer == "G" and current_room == "hall"):
+            print("This is where the band was set up, so maybe your keys are here?  You enter the dining room.")
             print()
             current_room = "dining"
             times_in_diningroom += 1
@@ -239,14 +239,6 @@ def game():
             print()
             current_room = "hall"
             hallway()
-        elif answer == "G" and current_room == "hall":
-            print("This is where the band was set up, so maybe your keys are here?  You enter the dining room.")
-            print()
-            current_room = "dining"
-            times_in_diningroom += 1
-            if times_in_diningroom == 2:
-                diningroom2()
-            diningroom()
         elif answer == "H" and current_room == "living":
             print("You head towards the hallway.")
             print()
@@ -273,13 +265,8 @@ def game():
             print()
             current_room = "bath"
             downstairsbath()
-        elif answer == "N" and current_room == "bath":
-            print("You back out into the hallway.")
-            print()
-            current_room = "hall"
-            hallway()
-        elif answer == "O" and current_room == "kitch":
-            print("You go back out into the hallway.")
+        elif (answer == "N" and current_room == "bath") or (answer == "O" and current_room == "kitch"):
+            print("You go back to the hallway.")
             print()
             current_room = "hall"
             hallway()
