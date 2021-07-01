@@ -1,0 +1,4 @@
+Goal: Turn game into React app
+
+To Do:
+Find images to use for game
