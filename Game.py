@@ -90,11 +90,8 @@ def game():
     times_in_diningroom = 0
 
     def entryway():
-        print("But, wait.")
-        print("You can't leave now, you don't have your keys yet.")
-        print("Ugh!  This is the worst, but you need to find them!")
-        print("You turn back around to search some more.")
-        print()
+        print("But, wait. \n You can't leave now, you don't have your keys yet. \n")
+        print("Ugh!  This is the worst, but you need to find them! \n You turn back around to search some more. \n")
         livingroom()
     def livingroom():
         print()
@@ -119,23 +116,18 @@ def game():
         print("[V]eer back towards the hallway.")
         print("[P]oke around and look for your keys.")
     def diningroom2():
-        print("The boy looks up this time when you walk in.  He kind of squints at you for a second before lighting up.")
-        print()
-        print(f'"Hey!  You\'re {player_name}, right?  Hey, uh, do you like Steven Universe?"')
-        print()
+        print("The boy looks up this time when you walk in.  He kind of squints at you for a second before lighting up. \n")
+        print(f'"Hey!  You\'re {player_name}, right?  Hey, uh, do you like Steven Universe?" \n')
         print('[Y]es or [N]o')
         take_quiz = input(">  ")
         take_quiz = take_quiz.upper()
         if take_quiz == "Y":
             personality_quiz()
         else:
-            print('"Ah, okay, nevermind."')
-            print()
-            print("The boy starts looking at his phone again.")
+            print('"Ah, okay, nevermind." \n The boy starts looking at his phone again.')
 # use variable times_in_diningroom to call personality quiz on second visit to dining room.  copy quiz into functions section.
     def downstairsbath():
-        print("You're in the downstairs bathroom.")
-        print("What do you want to do?")
+        print("You're in the downstairs bathroom. \n What do you want to do?")
         print("[J]ust take a quick look around.")
         print('[N]ope! Back to the hallway.')
     def downstairsbed():
