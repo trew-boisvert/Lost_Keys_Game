@@ -2,3 +2,5 @@ Goal: Turn game into React app
 
 To Do:
 Find images to use for game
+dry up current versio
+  in particular, consolidate text into data structure
