@@ -145,9 +145,7 @@ def game():
         print("[F]uck it, I'm going back downstairs.")
     
     print("THE LOST KEYS")
-    print("___________________")
-    print()
-    print("What is your name?")
+    print("___________________\n\n What is your name?")
     player_name = input(">  ")
     if len(player_name) < 5:
         print("Short and sassy!  I fucking love it!  You have the best name!")
@@ -164,9 +162,7 @@ def game():
     print("Oh, also, if at any time you want to quit searching and, like, go get some tacos or something, just hit [X] the next time I ask you what you want to do.")
     print("Anyway, it's now the next morning.  You've schlepped back to the frat house and you're standing there, right in front of the front door.  This is actually a novel experience for you.  You've never been to a frat house in broad daylight before.")
     print("You hear a voice through the door.")
-    print()
-    print('"What are you doing," it asks.')
-    print()
+    print('\n"What are you doing," it asks.\n')
 
     print("How would you like to respond?")
     print("[A]nswer the question")
@@ -178,36 +174,25 @@ def game():
 
         if current_room == "hall" and spoke_to_burly_boy == True:
             print("A few moments later, you hear a distant thundering.  It's coming from upstairs and it's getting louder and louder.  One assumes that how you feel in this moment is how Simba felt seeing the wildebeest stampede through the ravine as a horde of large young men all thunder down the stairs, making a beeline for you.")
-            print()
-            print('"Someone tell the girl!" One of them shouts, faceless in the mob.  "Girl!  Hey, GIRL!!!  We found your keys, girl!!!"')
-            print()
-            print("They circle around you.  You haven't felt that small since you were maybe eleven years old.  One of them splits himself off from the crowd.")
-            print()
-            print('"Are these-" he pulls out a ring of keys from his pocket, "your keys?"')
-            print("And lo, there is the distictive bright millennial pink cat keychain dangling off the ring.")
-            print()
-            print('"Yes," you whisper.  "Oh my god, yes."')
-            print()
-            print('"EYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY!!!"')
-            print()
-            print("The cheer went up.")
-            print()
+            print('\n"Someone tell the girl!" One of them shouts, faceless in the mob.  "Girl!  Hey, GIRL!!!  We found your keys, girl!!!"')
+            print("\nThey circle around you.  You haven't felt that small since you were maybe eleven years old.  One of them splits himself off from the crowd.")
+            print('\n"Are these-" he pulls out a ring of keys from his pocket, "your keys?"')
+            print("And lo, there is the distictive bright millennial pink cat keychain dangling off the ring.\n")
+            print('"Yes," you whisper.  "Oh my god, yes."\n')
+            print('"EYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY!!!"\n')
+            print("The cheer went up.\n")
             print('Turns out he found them in the bathroom upstairs.  You thank them again profusely.  There\'s a scattered round of "no problems" and then, just as suddenly as they descended, they all dispersed, like ships in the night.')
-            print()
-            print(f"Congratulations, {player_name}!  You've found your keys!  You win!")
+            print(f"\n Congratulations, {player_name}!  You've found your keys!  You win!")
             break            
         if answer == "A" and current_room == "start":
-            print('"I lost my keys in here last night," you call back.  "I was seeing if I could go in and look for them?"')
-            print()
+            print('"I lost my keys in here last night," you call back.  "I was seeing if I could go in and look for them?"\n')
             print("He opens the door and gestures for you to go in.")
-            print('"Go wherever you want."')
-            print()
+            print('"Go wherever you want."\n')
             print("You've never seen a frat house post-party before.  There are hungover and still-drunk frat boys stumbling around in their socks and sandals and gym shorts, seeking out food and showers like moths to a porch light.  A few of them throw puzzled glances your way.  You're sure they think you're some post-bacchanalia hallucination.")
             current_room = "living"
             livingroom()
         elif answer == "B" and current_room == "hall":
-            print("You decide to head back to the living room.")
-            print()
+            print("You decide to head back to the living room.\n")
             current_room = "living"
             livingroom()
         elif answer == "C" and current_room == "hall":
@@ -215,25 +200,21 @@ def game():
             print()
             hallway()
         elif (answer == "D" and current_room == "living") or (answer == "G" and current_room == "hall"):
-            print("This is where the band was set up, so maybe your keys are here?  You enter the dining room.")
-            print()
+            print("This is where the band was set up, so maybe your keys are here?  You enter the dining room.\n")
             current_room = "dining"
             times_in_diningroom += 1
             if times_in_diningroom == 2:
                 diningroom2()
             diningroom()
         elif answer == "E" and current_room == "living":
-            print("You head for the front door.")
-            print()
+            print("You head for the front door.\n")
             entryway()
         elif answer == "F" and current_room == "up":
-            print("The stairs seem even more treacherous going down.")
-            print()
+            print("The stairs seem even more treacherous going down.\n")
             current_room = "hall"
             hallway()
         elif answer == "H" and current_room == "living":
-            print("You head towards the hallway.")
-            print()
+            print("You head towards the hallway.\n")
             current_room = "hall"
             hallway()
         elif answer == "I" and current_room == "kitch":
@@ -245,21 +226,18 @@ def game():
             print()
             downstairsbath()
         elif answer == "K" and current_room == "hall":
-            print("You walk into the kitchen.")
-            print()
+            print("You walk into the kitchen.\n")
             current_room = "kitch"
             kitchen()            
         elif answer == "L" and current_room == "start":
             print ("You decide to give up and just leave.")
             break
         elif answer == "M" and current_room == "hall":
-            print("The fumes wafting out almost make you change your mind, but you enter the bathroom.")
-            print()
+            print("The fumes wafting out almost make you change your mind, but you enter the bathroom.\n")
             current_room = "bath"
             downstairsbath()
         elif (answer == "N" and current_room == "bath") or (answer == "O" and current_room == "kitch"):
-            print("You go back to the hallway.")
-            print()
+            print("You go back to the hallway.\n")
             current_room = "hall"
             hallway()
         elif answer == "P" and current_room == "dining":
@@ -269,17 +247,14 @@ def game():
         elif answer == "Q" and current_room == "up":
             print("Twenty minutes have passed.  You've searched just about every bedroom and nuclear-waste-dump-site of a bathroom in the house.  You've given up on ever finding your keys and are preparing yourself to beg your roommates' forgiveness and get a new set copied.")
             print("As you stand there in the upstairs hallway, silently bewailing your predicament, a particularly-burly frat boy approaches you.")
-            print()
-            print('"You need help with something?"')
-            print()
+            print('\n"You need help with something?"\n')
             print("(Well, do you?  [Y]es or [N]o?)")
 
             help = input(">  ")
             help = help.upper()
 
             if help == "Y":
-                print('"I lost my keys here last night and I can\'t find them, I\'ve looked everywhere."')
-                print()
+                print('"I lost my keys here last night and I can\'t find them, I\'ve looked everywhere."\n')
                 print('"What do they look like?  I\'ll put it into the group chat," he said, already pulling out his phone.')
                 print('No one ever checks a group chat, you think, but what the hell.  It\'s worth a shot.  "Um, it\'s just a ring of keys.  The keychain is a pink plastic cat, though, like yea big.  Like, bright pink, you can\'t miss it."')
                 print("He nods, presumably typing this description faithfully into the group chat.")
@@ -287,17 +262,14 @@ def game():
                 spoke_to_burly_boy = True
                 upstairslanding()
             elif help == "N":
-                print('"No," you tell him.')
-                print("You turn away from him and try to think of what to do next.")
-                print()
+                print('"No," you tell him.\n You turn away from him and try to think of what to do next. \n')
                 upstairslanding()
             else:
                 print("He gives you a quizzical look.")
                 upstairslanding()
 
         elif answer == "R" and current_room == "dining":
-            print("You go back to the living room.")
-            print()
+            print("You go back to the living room. \n")
             current_room = "living"
             livingroom()
         elif answer == "S" and current_room == "living":
@@ -305,18 +277,15 @@ def game():
             print()
             livingroom()
         elif answer == "T" and current_room == "hall":
-            print("The door is open, so you walk into what looks like a bedroom.")
-            print()
+            print("The door is open, so you walk into what looks like a bedroom. \n")
             current_room = "bed"
             downstairsbed()
         elif answer == "U" and current_room == "hall":
-            print("You head towards the stairs at the end of the hallway and begin to climb, avoiding slippery pieces of discarded clothing as you go.")
-            print()
+            print("You head towards the stairs at the end of the hallway and begin to climb, avoiding slippery pieces of discarded clothing as you go. \n")
             current_room = "up"
             upstairslanding()
         elif (answer == "V" and current_room == "dining") or (answer == "W" and current_room == "bed"):
-            print("You turn back to the hallway.")
-            print()
+            print("You turn back to the hallway. \n")
             current_room = "hall"
             hallway()
         elif answer == "X":
@@ -325,14 +294,9 @@ def game():
         elif answer == "Y" and current_room == "bed":
             print("You enter a room where a boy is drunkenly watching some Old Yeller-esque movie on a tiny TV in the corner of the room from his bed.")
             print('"Do you like dog movies?" he asks, voice all mumbly from grogginess and also from the fact that his face is squished against his pillow and half-buried by his blanket.')
-            print()
-            print("You tell him you do.")
-            print()
+            print("\n You tell him you do. \n")
             print("He mumbles again, pleased, and asks what you're doing.  You tell him you're looking for your keys.")
-            print('"Sorry, I haven\'t seen any keys around here."')
-            print()
-            print("You don't doubt him.")
-            print()
+            print('"Sorry, I haven\'t seen any keys around here." \n You don\'t doubt him. \n')
             downstairsbed()
         elif answer == "Z" and current_room == "up":
             print("You've heard this area colloquially referred to as 'Fight Club' and you can see why.  Plywood has been haphazardly hammered into a series of dividers, carving out several \"bedrooms.\"  There are stickers and lewd doodles on every inch of the space, and the \"doors\" are no more than bedsheets and shower curtains nailed into place.  You begin a half-assed search of the area, fairly certain you didn't come up here last night, but still desperate to find your keys.  There's another noxious ruin of a bathroom up here, which you search as well.  Still no keys!")
