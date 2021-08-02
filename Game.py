@@ -179,15 +179,13 @@ def game():
             print('\n"Are these-" he pulls out a ring of keys from his pocket, "your keys?"')
             print("And lo, there is the distictive bright millennial pink cat keychain dangling off the ring.\n")
             print('"Yes," you whisper.  "Oh my god, yes."\n')
-            print('"EYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY!!!"\n')
-            print("The cheer went up.\n")
+            print('"EYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY!!!"\n The cheer went up.\n')
             print('Turns out he found them in the bathroom upstairs.  You thank them again profusely.  There\'s a scattered round of "no problems" and then, just as suddenly as they descended, they all dispersed, like ships in the night.')
             print(f"\n Congratulations, {player_name}!  You've found your keys!  You win!")
             break            
         if answer == "A" and current_room == "start":
             print('"I lost my keys in here last night," you call back.  "I was seeing if I could go in and look for them?"\n')
-            print("He opens the door and gestures for you to go in.")
-            print('"Go wherever you want."\n')
+            print("He opens the door and gestures for you to go in.\n \"Go wherever you want.\"\n")
             print("You've never seen a frat house post-party before.  There are hungover and still-drunk frat boys stumbling around in their socks and sandals and gym shorts, seeking out food and showers like moths to a porch light.  A few of them throw puzzled glances your way.  You're sure they think you're some post-bacchanalia hallucination.")
             current_room = "living"
             livingroom()
