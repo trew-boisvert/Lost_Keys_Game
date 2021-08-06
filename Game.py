@@ -96,10 +96,8 @@ def game():
     def livingroom():
         print()
         print("Alright, you're in the livingroom.  What would you like to do next?")
-        print("[S]earch the living room.")
-        print("[E]xit through the front door.")
-        print("[H]allway seems promising.")
-        print("[D]ining room, I guess?")
+        print("[S]earch the living room. \n [E]xit through the front door.")
+        print("[H]allway seems promising.\n [D]ining room, I guess?")
     def hallway():
         print("You're in a very long hallway, with several doors.  What would you like to do next?")
         print("[B]ack to the living room.")
