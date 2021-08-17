@@ -94,8 +94,7 @@ def game():
         print("Ugh!  This is the worst, but you need to find them! \n You turn back around to search some more. \n")
         livingroom()
     def livingroom():
-        print()
-        print("Alright, you're in the livingroom.  What would you like to do next?")
+        print("\n Alright, you're in the livingroom.  What would you like to do next?")
         print("[S]earch the living room. \n [E]xit through the front door.")
         print("[H]allway seems promising.\n [D]ining room, I guess?")
     def hallway():
@@ -163,8 +162,7 @@ def game():
     print('\n"What are you doing," it asks.\n')
 
     print("How would you like to respond?")
-    print("[A]nswer the question")
-    print("[L]eave")
+    print("[A]nswer the question \n [L]eave")
 
     while True:
         answer = input(">  ")
