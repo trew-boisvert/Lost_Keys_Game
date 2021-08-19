@@ -2,5 +2,6 @@ Goal: Turn game into React app
 
 To Do:
 Find images to use for game
-dry up current versio
+dry up current version
   in particular, consolidate text into data structure
+  maybe make room functions into dictionary entries
